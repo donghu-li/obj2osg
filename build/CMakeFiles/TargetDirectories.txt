@@ -1,0 +1,3 @@
+/home/sangsang/projects/20250924/obj2osg/build/CMakeFiles/osg_converter.dir
+/home/sangsang/projects/20250924/obj2osg/build/CMakeFiles/edit_cache.dir
+/home/sangsang/projects/20250924/obj2osg/build/CMakeFiles/rebuild_cache.dir

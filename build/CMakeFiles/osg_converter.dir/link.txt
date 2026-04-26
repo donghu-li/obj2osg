@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/osg_converter.dir/converter.cpp.o -o osg_converter  -Wl,-rpath,/usr/local/osg-3.6.5/lib /usr/local/osg-3.6.5/lib/libosg.so /usr/local/osg-3.6.5/lib/libosgDB.so /usr/local/osg-3.6.5/lib/libosgUtil.so /usr/local/osg-3.6.5/lib/libOpenThreads.so 
