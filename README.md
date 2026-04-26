@@ -6,8 +6,7 @@
 
 ## ✨ 核心特性
 
-- **一键打包独立资产**：将 `.obj` 模型、`.mtl` 材质文件以及外部的 `.jpg/.png` 贴图文件，完全内嵌打包成一个单一的二进制 `.osgb` 文件。告别繁琐的文件路径依赖，极大提升磁盘 I/O 读取速度。
-- **现代管线兼容 (Core Profile)**：自动遍历并暴破掉老旧模型自带的固定渲染管线属性（如遗留的 `osg::Material`），并自动注入兼容现代显卡的 GLSL Shader 状态。彻底解决现代渲染器中满屏的 `invalid enumerant` 或 `Material::apply - not supported` 报错。
+- **一键打包独立资产**：将 `.obj` 模型、`.mtl` 材质文件以及外部的 `.jpg/.png` 贴图文件，完全内嵌打包成一个单一的二进制 `.osgb` 文件。
 - **底层拓扑优化**：内置 `osgUtil::Optimizer`，在转换期间自动执行网格索引化（INDEX_MESH）和顶点预变换（VERTEX_PRETRANSFORM），降低 DrawCall，提升高吞吐场景下的实时渲染帧率。
 
 ## 🛠️ 环境依赖
