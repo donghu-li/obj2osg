@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    // 2. 场景图优化 (非常关键)
+    // 2. 场景图优化
     // 这会将零散的几何体合并，移除冗余节点，极大提升后续光场渲染的帧率
     cout << "正在优化场景图拓扑结构..." << endl;
     osgUtil::Optimizer optimizer;
@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
     bool success = osgDB::writeNodeFile(*model, outputPath, writeOptions.get());
 
     if (success) {
-        cout << "转换成功！现在你只需要加载 " << outputPath << " 即可，不再依赖外部图片。" << endl;
+        cout << "转换成功！现在你只需要加载 " << outputPath << " 即可。" << endl;
     } else {
         cerr << "错误: 写入文件失败！" << endl;
     }
